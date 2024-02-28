@@ -1,8 +1,12 @@
 import { Normalize } from "styled-normalize";
+import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
   return (
-    <Normalize />
+    <ThemeProvider>
+      <Normalize />
+      <GlobalStyle />
+    </ThemeProvider>
   );
 }
 
