@@ -1,12 +1,12 @@
 import { BasicInformation } from "./BasicInformation";
 import { Wrapper } from "./styled";
-import { ThemeSwitch } from "../../common/ThemeSwitch";
+import { ThemeSwitchButton } from "../../common/ThemeSwitchButton";
 
 
 export const PersonalHomepage = () => {
     return (
         <Wrapper>
-            <ThemeSwitch />
+            <ThemeSwitchButton />
             <BasicInformation />
         </Wrapper>
     );

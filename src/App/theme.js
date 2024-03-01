@@ -10,6 +10,7 @@ const colorNames = {
 
 export const themeLight = {
     colors: {
+        text: colorNames.mineShaft,
         site: {
             background: colorNames.whiteLilac,
             text: colorNames.slateGray,
@@ -23,6 +24,7 @@ export const themeLight = {
 
 export const themeDark = {
     colors: {
+        text: colorNames.white,
         site: {
             background: colorNames.mineShaft,
             text: colorNames.white,

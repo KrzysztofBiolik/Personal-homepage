@@ -9,5 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
     font-family: "Inter", "sans-serif";
+    background: ${({theme}) => theme.colors.site.background};
+    color: ${({theme}) => theme.colors.site.text};
     }
 `;
