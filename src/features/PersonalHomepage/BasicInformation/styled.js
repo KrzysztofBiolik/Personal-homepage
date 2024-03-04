@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ButtonLink } from "../ButtonLink";
+import { ReactComponent as EnvelopeIcon } from "./Envelope.svg";
 
 export const Wrapper = styled.header`
     display: grid;
@@ -23,11 +25,22 @@ export const ThisIs = styled.div`
 export const Name = styled.h1`
     font-size: 38px;
     font-weight: 900;
-    color: ${({theme}) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
 `;
 
 export const Description = styled.p`
     font-size:28px;
     max-width:650px;
     line-height: 1.4;
+`;
+
+export const StyledButtonLink = styled(ButtonLink)`
+    display: inline-flex;
+    align-items: center;
+    ;
+`;
+
+
+export const ButtonIcon = styled(EnvelopeIcon)`
+    margin-right: 16px;
 `;
