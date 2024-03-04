@@ -5,11 +5,14 @@ const colorNames = {
     doveGray: "#6D6D6D",
     mercury: "#e5e5e5",
     mineShaft: "#252525",
+    scienceBlue: "#0366D6",
+    dodgerBlue: "#2188FF",
 
 };
 
 export const themeLight = {
     colors: {
+        primary: colorNames.dodgerBlue,
         text: colorNames.mineShaft,
         site: {
             background: colorNames.whiteLilac,
@@ -24,6 +27,7 @@ export const themeLight = {
 
 export const themeDark = {
     colors: {
+        primary: colorNames.scienceBlue,
         text: colorNames.white,
         site: {
             background: colorNames.mineShaft,
