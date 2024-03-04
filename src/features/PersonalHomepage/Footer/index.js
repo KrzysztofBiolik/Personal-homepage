@@ -1,7 +1,7 @@
 import { email } from "../email"
 import { Wrapper } from "../styled"
 import { EmailLink, LetsTalk, Text } from "./styled"
-
+import { SocialProfiles } from "./SocialProfiles";
 
 export const Footer = () => (
     <Wrapper>
@@ -10,6 +10,7 @@ export const Footer = () => (
         <Text>Tutaj będzie mój opis. Tutaj będzie mój opis.
             Tutaj będzie mój opis. Tutaj będzie mój opis. Tutaj będzie mój opis.
         </Text>
+        <SocialProfiles />
     </Wrapper>
 );
 
