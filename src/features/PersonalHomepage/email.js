@@ -1,0 +1,1 @@
+export const email = "bioliq01@gmail.com";
