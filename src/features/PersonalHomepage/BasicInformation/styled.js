@@ -11,6 +11,7 @@ export const Wrapper = styled.header`
 `;
 
 export const PhotoOfMe = styled.img`
+    width: 30vw;
     max-width:384px;
     border-radius: 50%;
 `;
@@ -29,15 +30,17 @@ export const Name = styled.h1`
 `;
 
 export const Description = styled.p`
-    font-size:28px;
+    font-size:20px;
     max-width:650px;
-    line-height: 1.4;
+    margin: 36px 0 0 0;
+    line-height: 1.4; // wysokośc interlinii
 `;
 
 export const StyledButtonLink = styled(ButtonLink)`
     display: inline-flex;
     align-items: center;
-    ;
+    margin-top:32px;
+    text-decoration: none;
 `;
 
 
