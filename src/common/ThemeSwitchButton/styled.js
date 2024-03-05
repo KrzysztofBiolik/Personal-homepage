@@ -33,7 +33,7 @@ export const Box = styled.span`
 `;
 
 export const IconWrapper = styled.div`
-    background: currentColor;
+    background: currentColor; // takie samo jak kolor tekstu
     display: flex;
     padding: 4px;
     border-radius: 50%;
