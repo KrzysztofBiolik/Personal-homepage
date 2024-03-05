@@ -1,6 +1,6 @@
 import { BasicInformation } from "./BasicInformation";
 import { Wrapper } from "./styled";
-import { ThemeSwitchButton } from "../../common/ThemeSwitchButton";
+import { ThemeSwitchButton } from "../../../common/ThemeSwitchButton";
 import { Skills } from "./Skills/index";
 import { nextSkills, skills } from "../PersonalHomepage/skills";
 import { Footer } from "./Footer";
