@@ -1,15 +1,26 @@
 import styled from "styled-components";
+import { SubHeader } from "../SubHeader";
 
 export const Section = styled.section`
-background-color:white;
- box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
+    background: ${({ theme }) => theme.colors.boxBackground};
+    box-shadow: ${({ theme }) => theme.boxShadow};
+    border-radius: ${({ theme }) => theme.borderRadius};
+    padding: 32px;
+    margin-top: 72px;
 `;
 
 export const List = styled.ul`
-display: grid;
-grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding:0;
+    grid-gap: 10px 108px;
 `;
 
-export const Item = styled.li``;
+export const Item = styled.li`
+    line-height: 1.4;
+`;
 
-export const StyleHeader = styled.h2``;
+export const StyleHeader = styled(SubHeader)`
+    padding-bottom:16px;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.text} ;
+`;
