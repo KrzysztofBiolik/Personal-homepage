@@ -7,7 +7,7 @@ const projectsSlice = createSlice({
     },
     reducers: {
         fetchRepositories: () => { },
-        setRepositories: (_, { repositories }) => {
+        setRepositories: (state, { repositories }) => {
             state.repositories = repositories
         },
     }
