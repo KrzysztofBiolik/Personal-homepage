@@ -2,9 +2,9 @@ import { Normalize } from "styled-normalize";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import { themeDark, themeLight } from "./theme";
-import { PersonalHomepage } from "../features/PersonalHomepage";
 import { useSelector } from "react-redux";
 import { selectIsDarkTheme } from "../common/themeSlice";
+import { PersonalHomepage } from "../features/personalHomepage/PersonalHomepageSite";
 
 export const App = () => {
 

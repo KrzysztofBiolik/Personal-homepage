@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as GitHubIcon } from "../../../common/icons/Github.svg";
+import { ReactComponent as GitHubIcon } from "../../../../common/icons/Github.svg";
 
 export const Section = styled.div`
     margin-top: 72px;

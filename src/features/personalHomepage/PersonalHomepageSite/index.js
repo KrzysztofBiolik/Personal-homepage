@@ -2,7 +2,7 @@ import { BasicInformation } from "./BasicInformation";
 import { Wrapper } from "./styled";
 import { ThemeSwitchButton } from "../../../common/ThemeSwitchButton";
 import { Skills } from "./Skills/index";
-import { nextSkills, skills } from "../PersonalHomepage/skills";
+import { nextSkills, skills } from "../PersonalHomepageSite/skills";
 import { Footer } from "./Footer";
 import { Portfolio } from "./Portfolio";
 
