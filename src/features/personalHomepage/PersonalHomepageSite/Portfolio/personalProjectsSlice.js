@@ -7,11 +7,15 @@ const projectsSlice = createSlice({
     },
     reducers: {
         fetchRepositories: () => { },
+        setRepositories: (_, { repositories }) => {
+            state.repositories = repositories
+        },
     }
 })
 
 export const {
     fetchRepositories,
+    setRepositories,
 } = projectsSlice.actions;
 
 const selectprojectsState = state => state.personalProjects;
