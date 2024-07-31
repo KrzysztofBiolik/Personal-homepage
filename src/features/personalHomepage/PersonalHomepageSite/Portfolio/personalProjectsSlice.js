@@ -6,11 +6,12 @@ const projectsSlice = createSlice({
         repositories: null,
     },
     reducers: {
+        fetchRepositories: () => { },
     }
 })
 
 export const {
-
+    fetchRepositories,
 } = projectsSlice.actions;
 
 const selectprojectsState = state => state.personalProjects;
