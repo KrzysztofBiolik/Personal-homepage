@@ -1,4 +1,4 @@
-import { Header, StyledGitHubIcons, MyProjects, Section, List, Tile } from "./styled";
+import { Header, StyledGitHubIcons, MyProjects, Section, List, Tile, Name, Description, Links, LinksRow, LinksValue, Link } from "./styled";
 import { SubHeader } from "../SubHeader";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,7 +11,7 @@ export const Portfolio = () => {
 
     useEffect(() => {
         dispatch(fetchRepositories());
-    }, [dispatch])
+    }, [dispatch]);
 
     return (
         <Section>
@@ -21,9 +21,38 @@ export const Portfolio = () => {
                 <MyProjects>My recent projects</MyProjects>
             </Header>
             <List>
-                {repos.map(({ name, html_url }) => (
-                    <Tile>
-                        {name}
+                {repos && repos.map(({ id, name, description, homepage, html_url }) => (
+                    <Tile key={id}>
+                        <Name>{name}</Name>
+                        <Description>{description}</Description>
+                        <Links>
+                            {!!homepage && (
+                                <LinksRow>
+                                    <dt>Demo:</dt>
+                                    <LinksValue>
+                                        <Link
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            href={homepage}
+                                        >
+                                            {homepage}
+                                        </Link>
+                                    </LinksValue>
+                                </LinksRow>
+                            )}
+                            <LinksRow>
+                                <dt>Code:</dt>
+                                <LinksValue>
+                                    <Link
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href={html_url}
+                                    >
+                                        {html_url}
+                                    </Link>
+                                </LinksValue>
+                            </LinksRow>
+                        </Links>
                     </Tile>
                 ))}
             </List>
