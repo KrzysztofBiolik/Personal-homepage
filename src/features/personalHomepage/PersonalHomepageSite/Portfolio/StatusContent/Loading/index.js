@@ -1,5 +1,10 @@
+import { StyledSpinner, Wrapper } from "./styled";
+
 export const Loading = () => {
     return (
-        <p>Ładowanie</p>
+        <Wrapper>
+            Please wait, projects are&nbsp;being&nbsp;loaded...
+            <StyledSpinner />
+        </Wrapper>
     )
 };
