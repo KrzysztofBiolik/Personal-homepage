@@ -5,4 +5,5 @@ export const ButtonLink = styled.a`
     font-size:20px;
     background: ${({ theme }) => theme.colors.primary};
     color: white;
+    text-decoration: none;
 `;

@@ -40,8 +40,7 @@ export const StyledButtonLink = styled(ButtonLink)`
     display: inline-flex;
     align-items: center;
     margin-top:32px;
-    text-decoration: none;
-`;
+    `;
 
 
 export const ButtonIcon = styled(EnvelopeIcon)`
