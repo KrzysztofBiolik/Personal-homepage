@@ -4,11 +4,14 @@ const projectsSlice = createSlice({
     name: "projects",
     initialState: {
         repositories: null,
+        status: "initial",
     },
     reducers: {
-        fetchRepositories: () => {
+        fetchRepositories: (state) => {
+            state.status = "loading";
         },
         setRepositories: (state, { payload: repositories }) => {
+            state.status = "success";
             state.repositories = repositories;
         },
     }
@@ -22,5 +25,6 @@ export const {
 const selectprojectsState = state => state.projects;
 
 export const selectRepositories = (state) => selectprojectsState(state).repositories;
+export const selectRepositoriesStatus = (state) => selectprojectsState(state).status;
 
 export default projectsSlice.reducer;
