@@ -1,13 +1,9 @@
 import axios from "axios";
+import { githubAPIURL, username } from "../../../strings";
 
 export const getGithubRepos = async () => {
 
-    const githubURL = "https://api.github.com";
-    const username = "krzysztofbiolik"
-
-    const response = await axios.get(
-        `${githubURL}/users/${username}/repos`
-    );
+    const response = await axios.get(`${githubAPIURL}users${username}/repos`);
     return response.data;
 
 };
