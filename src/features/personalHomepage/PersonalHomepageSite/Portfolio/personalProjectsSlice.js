@@ -14,12 +14,16 @@ const projectsSlice = createSlice({
             state.status = "success";
             state.repositories = repositories;
         },
+        setError: (state) => {
+            state.status = "error";
+        },
     }
 })
 
 export const {
     fetchRepositories,
     setRepositories,
+    setError,
 } = projectsSlice.actions;
 
 const selectprojectsState = state => state.projects;
