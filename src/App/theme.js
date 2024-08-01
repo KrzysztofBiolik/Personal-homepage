@@ -1,12 +1,15 @@
 const colorNames = {
     white: "#FFFFFF",
     whiteLilac: "#f6f6f9",
+    porcelain: "#F2F3F4",
+    blumine: "#1F5189",
     slateGray: "#677689",
     doveGray: "#6D6D6D",
     mercury: "#e5e5e5",
     mineShaft: "#252525",
     mineShaftLighter: "#313131",
     scienceBlue: "#0366D6",
+    tropicalBlue: "#CDE0F7",
     dodgerBlue: "#2188FF",
     shipCove: "#6D93BE",
     anakiwa: "#8CC2FF",
@@ -35,6 +38,11 @@ export const themeLight = {
         },
         boxBackground: colorNames.white,
         headerLine: colorNames.mercury,
+        tile: {
+            border: colorNames.porcelain,
+            borderHover: colorNames.tropicalBlue,
+            header: colorNames.scienceBlue,
+        },
         themeSwitch: {
             background: colorNames.mercury,
             icon: colorNames.white,
@@ -58,6 +66,11 @@ export const themeDark = {
         },
         boxBackground: colorNames.mineShaftLighter,
         headerLine: colorNames.tundora,
+        tile: {
+            border: colorNames.tundora,
+            borderHover: colorNames.blumine,
+            header: colorNames.white,
+        },
         themeSwitch: {
             background: colorNames.doveGray,
             icon: colorNames.mineShaft,
