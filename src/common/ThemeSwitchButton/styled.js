@@ -21,6 +21,10 @@ export const ButtonText = styled.span`
     font-weight: bold;
     text-transform: uppercase;
     margin-right: 12px;
+
+    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
+        display: none;
+    }
 `;
 
 export const Box = styled.span`
