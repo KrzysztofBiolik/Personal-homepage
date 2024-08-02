@@ -22,7 +22,7 @@ export const ButtonText = styled.span`
     text-transform: uppercase;
     margin-right: 12px;
 
-    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
+    @media(max-width: ${({theme}) => theme.breakpoints.tabletVerticalMax}px) {
         display: none;
     }
 `;

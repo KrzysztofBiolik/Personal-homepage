@@ -6,4 +6,8 @@ export const ButtonLink = styled.a`
     background: ${({ theme }) => theme.colors.primary};
     color: white;
     text-decoration: none;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+       padding: 8px 10px;
+    };
 `;

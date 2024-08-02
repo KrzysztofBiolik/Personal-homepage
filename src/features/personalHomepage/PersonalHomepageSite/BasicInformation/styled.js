@@ -40,8 +40,12 @@ export const Name = styled.h1`
     font-weight: 900;
     color: ${({ theme }) => theme.colors.text};
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+       margin: 8px 0 8px 0;
+        } 
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        font-size: 26px;
+        font-size: 28px;
         margin-top:8px;
         } 
 `;

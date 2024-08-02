@@ -7,6 +7,11 @@ export const Wrapper = styled.div`
     justify-items: center;
     text-align: center;
     color: ${({ theme }) => theme.colors.text};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        margin-top: 40px;
+        font-size:18px;
+    };
 `;
 
 export const Header = styled.header`

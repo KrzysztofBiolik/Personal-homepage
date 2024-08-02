@@ -6,6 +6,10 @@ export const List = styled.ul`
     display:flex;
     margin-top:56px;
     margin-bottom: 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        margin-top: 36px;
+    };
 `;
 
 export const Item = styled.li`

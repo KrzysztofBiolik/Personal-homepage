@@ -20,6 +20,10 @@ export const EmailLink = styled.a`
     &:hover {
         color: ${({theme}) => theme.colors.primary};
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        font-size:24px;
+    };
 `;
 
 export const EmailWrapper = styled.div`
