@@ -14,6 +14,10 @@ export const List = styled.ul`
     grid-template-columns: repeat(3, 1fr);
     padding:0;
     grid-gap: 10px 108px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        grid-template-columns: repeat(2, 1fr);
+    };
 `;
 
 export const Item = styled.li`
