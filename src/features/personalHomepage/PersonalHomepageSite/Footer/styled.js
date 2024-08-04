@@ -46,3 +46,11 @@ export const Text = styled.p`
     };
 `;
 
+export const Icon = styled.img`
+    vertical-align: middle;
+    margin-left: 5px;
+
+    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
+        height: 16px;
+    }
+`;
