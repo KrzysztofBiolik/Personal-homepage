@@ -17,10 +17,18 @@ export const Wrapper = styled.div`
 export const Header = styled.header`
     font-weight: 700;
     font-size:24px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size:18px;
+    };
 `;
 
 export const Paragraph = styled.p`
     margin: 0;
     font-size: 20px;
     line-height: 1.4;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size:16px;
+    };
 `;

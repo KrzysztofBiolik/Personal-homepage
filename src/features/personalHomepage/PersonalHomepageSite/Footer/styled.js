@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Section = styled.footer`
     margin-top: 120px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        margin-top: 60px;
+    };
 `;
 
 export const LetsTalk = styled.p`
@@ -36,4 +40,9 @@ export const Text = styled.p`
     line-height: 1.4;
     color: ${({theme}) => theme.colors.text};
     margin: 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size:16px;
+    };
 `;
+
