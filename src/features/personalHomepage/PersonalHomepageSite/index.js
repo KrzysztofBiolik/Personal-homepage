@@ -1,10 +1,12 @@
 import { BasicInformation } from "./BasicInformation";
-import { Wrapper } from "./styled";
+import { Icon, Wrapper } from "./styled";
 import { ThemeSwitchButton } from "../../../common/ThemeSwitchButton";
 import { Skills } from "./Skills/index";
 import { nextSkills, skills } from "../PersonalHomepageSite/skills";
 import { Footer } from "./Footer";
 import { Portfolio } from "./Portfolio";
+import toolsIcon from "../../../images/toolsIcon.png"
+import rocketIcon from "../../../images/rocketIcon.png"
 
 
 export const PersonalHomepage = () => {
@@ -15,7 +17,7 @@ export const PersonalHomepage = () => {
             <Skills
                 title={(
                     <>
-                        My skillset includes
+                        My skillset includes <Icon src={toolsIcon} />
                     </>
                 )}
                 skills={skills}
@@ -23,7 +25,7 @@ export const PersonalHomepage = () => {
             <Skills
                 title={(
                     <>
-                        What I want to learn next
+                        What I want to learn next <Icon src={rocketIcon} />
                     </>
                 )}
                 skills={nextSkills}
