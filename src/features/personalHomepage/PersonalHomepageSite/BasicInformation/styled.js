@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ButtonLink } from "../ButtonLink";
-import { ReactComponent as EnvelopeIcon } from "./Envelope.svg";
+import { ReactComponent as EnvelopeIcon } from "../../../../images/Envelope.svg";
 
 export const Wrapper = styled.header`
     display: grid;
@@ -24,7 +24,7 @@ export const PhotoOfMe = styled.img`
     border-radius: 50%;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        width: 35vw;
+        width: 40vw;
     } 
 `;
 

@@ -1,6 +1,6 @@
-import { ReactComponent as GithubIon } from "../../../../../common/icons/Github.svg";
-import { ReactComponent as Facebook } from "./SocialIcons/Facebook.svg";
-import { ReactComponent as Instagram } from "./SocialIcons/Instagram.svg";
+import { ReactComponent as GithubIon } from "../../../../../images/Github.svg";
+import { ReactComponent as Facebook } from "../../../../../images/Facebook.svg";
+import { ReactComponent as Instagram } from "../../../../../images/Instagram.svg";
 
 
 export const profilesData = [

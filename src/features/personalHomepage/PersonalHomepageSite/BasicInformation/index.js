@@ -1,5 +1,5 @@
 import { email } from "../email";
-import chrisBiolikPhoto from "./personal-homepage-photo-of-me.jpg";
+import chrisBiolikPhoto from "../../../../images/personal-homepage-photo-of-me.jpg";
 import { PhotoOfMe, Wrapper, ThisIs, Name, Description, ButtonIcon, StyledButtonLink } from "./styled";
 
 export const BasicInformation = () => {
