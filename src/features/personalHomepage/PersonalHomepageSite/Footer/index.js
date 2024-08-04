@@ -1,18 +1,19 @@
 import { email } from "../email"
-import { Wrapper } from "../styled"
-import { EmailLink, EmailWrapper, LetsTalk, Text } from "./styled"
+import { EmailLink, EmailWrapper, Icon, LetsTalk, Section, Text } from "./styled"
 import { SocialProfiles } from "./SocialProfiles";
+import FingerIcon from "../../../../images/fingersCrossedIcon.png"
 
 export const Footer = () => (
-    <Wrapper>
+    <Section>
         <LetsTalk>Let's Talk!</LetsTalk>
         <EmailWrapper>
             <EmailLink href={`mailto:${email}`}>{email}</EmailLink>
         </EmailWrapper>
         <Text>Tutaj będzie mój opis. Tutaj będzie mój opis.
             Tutaj będzie mój opis. Tutaj będzie mój opis. Tutaj będzie mój opis.
+            <Icon src={FingerIcon} />
         </Text>
         <SocialProfiles />
-    </Wrapper>
+    </Section>
 );
 
