@@ -9,8 +9,7 @@ export const BasicInformation = () => {
             <div>
                 <ThisIs>This is</ThisIs>
                 <Name>Krzysiek Biolik</Name>
-                <Description>👦💻 Tutaj będzie mój opis. Tutaj będzie mój opis. Tutaj będzie mój opis.
-                    Tutaj będzie mój opis. Tutaj będzie mój opis.
+                <Description>👦💻 I'm passionate Frontend Developer in love with React, currently looking for first job opportunities. 
                 </Description>
                 <StyledButtonLink href={`mailto:${email}`} title={email}>
                     <ButtonIcon />
