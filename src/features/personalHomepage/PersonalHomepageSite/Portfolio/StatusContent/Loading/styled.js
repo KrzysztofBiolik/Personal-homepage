@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { ReactComponent as Spinner } from "./icon-spinner.svg"
+import { ReactComponent as Spinner } from "../../../../../../images/icon-spinner.svg"
 
 const rotate = keyframes`
 to {

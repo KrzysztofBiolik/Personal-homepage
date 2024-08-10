@@ -1,5 +1,5 @@
 import { Header, Paragraph, Wrapper } from "./styled"
-import { ReactComponent as WarningIcon } from "./Danger.svg";
+import { ReactComponent as WarningIcon } from "../../../../../../images/Danger.svg";
 import { ButtonLink } from "../../../ButtonLink";
 import { baseGitHubURL, username } from "../../../../../strings";
 
