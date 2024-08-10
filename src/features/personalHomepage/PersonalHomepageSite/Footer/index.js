@@ -9,8 +9,7 @@ export const Footer = () => (
         <EmailWrapper>
             <EmailLink href={`mailto:${email}`}>{email}</EmailLink>
         </EmailWrapper>
-        <Text>Tutaj będzie mój opis. Tutaj będzie mój opis.
-            Tutaj będzie mój opis. Tutaj będzie mój opis. Tutaj będzie mój opis.
+        <Text>I'm always open to new projects whenever I have the time. If you have a website, application, or any other digital initiative in mind and need some help to make your ideas come to life, feel free to contact me
             <Icon src={FingerIcon} />
         </Text>
         <SocialProfiles />
